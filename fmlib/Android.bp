@@ -1,0 +1,16 @@
+
+java_library {
+    name: "hisi.fmradio",
+    provides_uses_lib: "hisi.fmradio",
+    installable: true,
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.aidl",
+    ],
+}
+
+prebuilt_etc {
+    name: "hisi.fmradio.xml",
+    src: "hisi.fmradio.xml",
+    sub_dir: "permissions",
+}
