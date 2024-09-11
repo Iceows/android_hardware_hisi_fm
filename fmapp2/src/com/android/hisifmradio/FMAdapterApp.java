@@ -33,10 +33,6 @@ public class FMAdapterApp extends Application {
     //For Debugging only
     private static int sRefCount=0;
 
-    static {
-        if (DBG) Log.d(TAG,"Loading FM-JNI Library");
-        System.loadLibrary("fm_jni");
-    }
 
     public FMAdapterApp() {
         super();
