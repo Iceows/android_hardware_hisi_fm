@@ -1,0 +1,14 @@
+
+android_app {
+    name: "FMApp2-Hisi",
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.aidl",
+    ],
+    certificate: "platform",
+    libs: ["hisi.fmradio"],
+    platform_apis: true,
+    aaptflags: ["--legacy"],
+    system_ext_specific: true,
+    required: ["hisi.fmradio.xml"],
+}
